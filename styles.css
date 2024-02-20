@@ -1,0 +1,37 @@
+body {
+    /* Define a imagem de fundo e configurações adicionais */
+    background-image: url('images.png');
+    background-size: cover; /* Preenche todo o container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    height: 100vh; /* Garante que a imagem cubra toda a altura da tela */
+    margin: 0; /* Remove margens padrão do body */
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+}
+
+.conteudo {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    /* Estilos aqui */
+}
+/* Estilos para a classe "conteudo" */
+.conteudo {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o elemento com o ID "conteudo1" */
+#conteudo1 {
+    border: 2px solid #333;
+}
+
+/* Estilos para o elemento com o ID "conteudo2" */
+#conteudo2 {
+    background-color: #e0e0e0;
+}
