@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho sobre Redes</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .tabs {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .tab {
+      cursor: pointer;
+      padding: 10px 15px;
+      background-color: #f1f1f1;
+      margin-right: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .content {
+      border: 1px solid #ccc;
+      border-radius: 0 0 5px 5px;
+      padding: 20px;
+      margin-top: -1px;
+    }
+  </style>
+</head>
+<body>
+  <center> <h2>Linguagem Orientada a Objeto</h2></center>
+  <center><h4><p>  Programação orientada a objetos (POO, ou OOP segundo as suas siglas em inglês) é um paradigma de programação baseado no conceito de "objetos", que podem conter dados na forma de campos, também conhecidos como atributos, e códigos, na forma de procedimentos, também conhecidos como métodos. Uma característica de objetos é que um procedimento de objeto pode acessar, e geralmente modificar, os campos de dados do objeto com o qual eles estão associados (objetos possuem uma noção de "this" (este) ou "self" (próprio)).</p></h4></center>
+  <center><h4><p> Em POO, programas de computadores são projetados por meio da composição de objetos que interagem com outros. Há uma diversidade significante de linguagens de POO, mas as mais populares são aquelas baseadas em classes, significando que objetos são instâncias de classes, que, normalmente, também determinam seu tipo.</p></h4></center>
+  <center><h2>Linguagem estatica</h2></center>
+  <center><h4><p><h4>A linguagem estática é um conceito fundamental na ciência da computação que se refere ao tipo de linguagem de programação em que os tipos de dados são verificados em tempo de compilação, em oposição ao tempo de execução. Em linguagens estáticas, como C, C++, Java e muitas outras, as variáveis devem ser declaradas com um tipo específico e esses tipos são verificados antes do programa ser executado. Isso significa que os erros de tipo são detectados antes do programa ser executado, o que pode resultar em uma maior confiabilidade e desempenho do programa final.</h4></p></h4></center>
+  <ul class="tabs">
+    <li class="tab" onclick="showContent('POO')">POO</li>
+    <li class="tab" onclick="showContent('estatica')">Linguagem Estatica</li>
+</ul>.
+<div id="POO" class="content" style="display: none;">
+
+    <h2>Característica</h2>
+    <p>A programação orientada a objetos utiliza objetos, porém nem todas das técnicas e estruturas associadas são suportadas diretamente em linguagens que afirmam suportar a POO. As características listadas abaixo são, entretanto, comuns entre linguagens consideradas fortemente orientadas a classes e objetos (ou multiparadigma com suporte a POO), com exceções notáveis mencionadas.</p>
+    
+    <h2>Diferença de POO </h2>
+  <p>A diferença entre linguagens orientadas a objetos reside principalmente nas abordagens e características específicas que cada uma oferece. Aqui estão algumas diferenças comuns:</p>
+  <ul>
+    <li><strong>Sintaxe e Semântica:</strong> As diferentes linguagens orientadas a objetos têm sintaxes e semânticas distintas para definir e manipular objetos, atributos e métodos.</li>
+    <li><strong>Herança:</strong> A herança é um conceito fundamental na programação orientada a objetos, permitindo que uma classe herde atributos e métodos de outra classe</li>
+    <li><strong>Polimorfismo:</strong> O polimorfismo permite que objetos de diferentes classes sejam tratados de maneira uniforme.Existem diferentes formas de implementar o polimorfismo, como sobrecarga de método, sobrecarga de operador e classes/interfaces genéricas.</li>
+    <li><strong>Encapsulamento</strong> O encapsulamento é o conceito de esconder os detalhes de implementação de um objeto e expor apenas uma interface para interagir com ele.Todas as linguagens orientadas a objetos oferecem algum nível de encapsulamento, mas a maneira como ele é alcançado pode ser diferente.</li>
+    <li><strong>Mecanismos de Metaprogramação:</strong>Algumas linguagens orientadas a objetos oferecem recursos avançados de metaprogramação, que permitem que programas modifiquem a si mesmos ou inspecionem sua própria estrutura durante a execução.Exemplos de mecanismos de metaprogramação incluem reflexão, introspecção e anotações.</li>
+  </ul>
+  <h2>Conclusão</h2>
+  <p>A POO é um paradigma surgido nos anos 1970, que utiliza objetos como elementos fundamentais na construção da solução. Um objeto é uma abstração de algum fato ou ente do mundo real, com atributos que representam as suas características ou propriedades, e métodos que emulam o seu comportamento ou atividade. Todas as propriedades e métodos comuns aos objetos encapsulam-se ou agrupam-se em classes. Uma classe é um modelo, um protótipo para criar objetos; no geral, diz-se que cada objeto é uma instância ou exemplar de uma classe.</p>
+
+</div>
+
+  <div id="modelo" class="content">
+    <div id="estatica" class="content" style="display: none;">
+        <ul>
+            <h2> <br><strong>Caracteristicas:</strong> </h2>
+             <p><strong>Verificação de Tipos em Tempo de Compilação:</strong> Erros de tipo são detectados durante a compilação.
+              <p><strong>Alocação de Memória Estática:</strong> A memória é alocada durante a compilação, resultando em uma execução mais eficiente.</p>
+             <p><strong>Rigidez do Sistema de Tipos:</strong>Variáveis têm tipos fixos, melhorando a segurança e prevenindo erros.</p>  
+             <p><strong> Desempenho Aprimorado:</strong>A compilação estática contribui para um desempenho otimizado do programa.</p>
+             <p> <strong>Detecção Antecipada de Erros:</strong>Problemas são identificados mais cedo no ciclo de desenvolvimento.</p>
+               <p><strong>Uso em Aplicações Críticas:</strong> Amplamente empregadas em sistemas operacionais, sistemas embarcados e aplicativos de grande escala devido à sua eficiência e segurança.</p>
+              
+              <p>As linguagens estáticas garantem maior segurança e eficiência através da verificação de tipos em tempo de compilação, alocação de memória estática e rigidez na definição de tipos. Isso resulta em programas mais robustos e rápidos, adequados para uma variedade de aplicações, desde sistemas operacionais até aplicativos de larga escala. </p>
+            
+          </ul>
+        </div>
+       
+ 
+        <script>
+            function showContent(tabId) {
+              const tabs = ['POO', 'estatica']; // Corrigido para os IDs corretos
+              tabs.forEach(tab => {
+                const content = document.getElementById(tab);
+                const tabElement = document.getElementById(tabId); // Corrigido para tabId
+                
+                if (tab === tabId) {
+                  content.style.display = 'block';
+                  tabElement.style.backgroundColor = '#ddd';
+                } else {
+                  content.style.display = 'none';
+                  tabElement.style.backgroundColor = '#f1f1f1';
+                }
+              });
+            }
+        </script>
+
+<br><a class="reference" href="https://chat.openai.com/share/7a4a30bd-eb74-4d98-90d7-3d830e96e9c0":>ChatGPT</a><br>
+<br> Guilherme Mesquita e Elson Mauricio</br>
+Curso:PI
+
+</body>
+</html>

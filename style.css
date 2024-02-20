@@ -1,14 +1,3 @@
-body {
-    /* Define a imagem de fundo e configurações adicionais */
-    background-image: url('images.png');
-    background-size: cover; /* Preenche todo o container */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repete a imagem */
-    height: 100vh; /* Garante que a imagem cubra toda a altura da tela */
-    margin: 0; /* Remove margens padrão do body */
-    font-family: Arial, sans-serif; /* Define uma fonte padrão */
-}
-
 .conteudo {
     padding: 20px;
     color: white;
