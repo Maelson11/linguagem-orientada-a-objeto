@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho sobre Redes</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .tabs {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .tab {
+      cursor: pointer;
+      padding: 10px 15px;
+      background-color: #f1f1f1;
+      margin-right: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .content {
+      border: 1px solid #ccc;
+      border-radius: 0 0 5px 5px;
+      padding: 20px;
+      margin-top: -1px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Linguagens estaticas e orientas a objetos</h1>
+
+
+  <p><h4>A linguagem estática é um conceito fundamental na ciência da computação que se refere ao tipo de linguagem de programação em que os tipos de dados são verificados em tempo de compilação, em oposição ao tempo de execução. Em linguagens estáticas, como C, C++, Java e muitas outras, as variáveis devem ser declaradas com um tipo específico e esses tipos são verificados antes do programa ser executado. Isso significa que os erros de tipo são detectados antes do programa ser executado, o que pode resultar em uma maior confiabilidade e desempenho do programa final.</h4></p>
+
+  <ul class="tabs">
+    <li class="tab" onclick="showContent('modelo')">Linguagens estaticas</li>
+  </ul>
+
+  <div id="modelo" class="content">
+
+    
+
+
+    <ul>
+      <h2> <br><strong>Caracteristicas:</strong> </h2>
+       <p><strong>Verificação de Tipos em Tempo de Compilação:</strong> Erros de tipo são detectados durante a compilação.
+        <p><strong>Alocação de Memória Estática:</strong> A memória é alocada durante a compilação, resultando em uma execução mais eficiente.</p>
+       <p><strong>Rigidez do Sistema de Tipos:</strong>Variáveis têm tipos fixos, melhorando a segurança e prevenindo erros.</p>  
+       <p><strong> Desempenho Aprimorado:</strong>A compilação estática contribui para um desempenho otimizado do programa.</p>
+       <p> <strong>Detecção Antecipada de Erros:</strong>Problemas são identificados mais cedo no ciclo de desenvolvimento.</p>
+         <p><strong>Uso em Aplicações Críticas:</strong> Amplamente empregadas em sistemas operacionais, sistemas embarcados e aplicativos de grande escala devido à sua eficiência e segurança.</p>
+        
+        <p>As linguagens estáticas garantem maior segurança e eficiência através da verificação de tipos em tempo de compilação, alocação de memória estática e rigidez na definição de tipos. Isso resulta em programas mais robustos e rápidos, adequados para uma variedade de aplicações, desde sistemas operacionais até aplicativos de larga escala. </p>
+      
+    </ul>
+  </div>
+
+ 
+  <script>
+    function showContent(tabId) {
+      const tabs = ['modelo', 'tipos', 'ligacao'];
+      tabs.forEach(tab => {
+        const content = document.getElementById(tab);
+        const tabElement = document.getElementById(tab);
+        
+        if (tab === tabId) {
+          content.style.display = 'block';
+          tabElement.style.backgroundColor = '#ddd';
+        } else {
+          content.style.display = 'none';
+          tabElement.style.backgroundColor = '#f1f1f1';
+        }
+      });
+    }
+  </script>
+
+<br>
+<br>
+<br>
+<a class="reference" href="https://chat.openai.com/share/7a4a30bd-eb74-4d98-90d7-3d830e96e9c0":>ChatGPT</a><br>
+Alunos: Guilherme Mesquita e Elson Mauricio<br>
+Curso:PI
+
+</body>
+</html>
