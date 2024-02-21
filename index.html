@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trabalho sobre linguagens de programmação</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -43,7 +43,8 @@
   <ul class="tabs">
     <li class="tab" onclick="showContent('POO')">POO</li>
     <li class="tab" onclick="showContent('estatica')">Linguagem Estatica</li>
-</ul>.
+    <li class="tab"><a href="pagina1.html" onclick="showContent('Proxima')">Proxima</a></li>
+</ul>
 <div id="POO" class="content" style="display: none;">
 
     <h2>Característica</h2>
@@ -82,7 +83,7 @@
  
         <script>
             function showContent(tabId) {
-              const tabs = ['POO', 'estatica']; // Corrigido para os IDs corretos
+              const tabs = ['POO', 'estatica', 'Proxima']; // Corrigido para os IDs corretos
               tabs.forEach(tab => {
                 const content = document.getElementById(tab);
                 const tabElement = document.getElementById(tabId); // Corrigido para tabId
