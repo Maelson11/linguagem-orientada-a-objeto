@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho sobre linguagens de programmação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <center><h2>como foi a consulta</h2></center>
+    <ul class="tabs">
+        <li class="tab"><a href="pagina3.html" onclick="showContent('volta')">Volta</a></li>
+        <li class="tab"><a href="pagin5.html" onclick="showContent('Proxima')">Proxima</a></li>
+    </ul>
+    <script>
+        function showContent(tabId) {
+          const tabs = ['volta', 'Proxima']; // Corrigido para os IDs corretos
+          tabs.forEach(tab => {
+            const content = document.getElementById(tab);
+            const tabElement = document.getElementById(tabId); // Corrigido para tabId
+            
+            if (tab === tabId) {
+              content.style.display = 'block';
+              tabElement.style.backgroundColor = '#ddd';
+            } else {
+              content.style.display = 'none';
+              tabElement.style.backgroundColor = '#f1f1f1';
+            }
+          });
+        }
+    </script>
+</body>
+</html>
