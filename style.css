@@ -1,5 +1,28 @@
-.conteudo {
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  .tabs {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .tab {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #f1f1f1;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .content {
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
     padding: 20px;
+    margin-top: -1px;
     color: white;
     text-align: center;
 }
